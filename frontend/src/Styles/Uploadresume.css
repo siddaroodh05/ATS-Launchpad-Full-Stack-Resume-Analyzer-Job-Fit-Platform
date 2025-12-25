@@ -1,0 +1,129 @@
+.upload-page {
+  min-height: calc(100vh - 70px);
+  background: radial-gradient(circle at top, #020617, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-card {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 24px;
+  width: 420px;
+  padding: 36px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.upload-icon {
+  width: 70px;
+  height: 70px;
+  background: #1e293b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  color: #6366f1;
+}
+
+.upload-card h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.upload-card p {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.upload-box {
+  display: block;
+  margin-top: 24px;
+  border: 2px dashed #334155;
+  border-radius: 18px;
+  padding: 28px;
+  cursor: pointer;
+  transition: border 0.3s, background 0.3s;
+}
+
+.upload-box:hover {
+  border-color: #6366f1;
+  background: rgba(99, 102, 241, 0.05);
+}
+
+.upload-placeholder,
+.file-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.upload-placeholder {
+  flex-direction: column;
+  color: #94a3b8;
+}
+
+.file-preview {
+  color: white;
+}
+
+.analyze-btn {
+  margin-top: 24px;
+  width: 100%;
+  background: #6366f1;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.analyze-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-1px);
+}
+
+/* --- Loading & Spinner --- */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.rotate {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Disabled & Analyzing State */
+.analyze-btn:disabled {
+  background: #334155;
+  cursor: not-allowed;
+  transform: none;
+  opacity: 0.8;
+  color: #94a3b8;
+}
+
+/* Optional pulse effect for analyzing */
+.analyze-btn:disabled:not(:has(.file-preview)) {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}

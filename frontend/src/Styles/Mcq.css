@@ -1,0 +1,161 @@
+.quiz-page {
+  min-height: 100vh;
+  background: #020617;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.quiz-container {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Header & Progress */
+.quiz-header {
+  margin-bottom: 40px;
+}
+
+.quiz-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.timer {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  padding: 8px 16px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.progress-bar-container {
+  height: 6px;
+  background: #1e293b;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #818cf8;
+  transition: width 0.3s ease;
+}
+
+/* Question Card */
+.question-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 24px;
+  padding: 40px;
+  min-height: 400px;
+  margin-bottom: 30px;
+}
+
+.question-text {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.option-btn {
+  background: #1e293b;
+  border: 1px solid transparent;
+  padding: 20px;
+  border-radius: 16px;
+  color: #cbd5f5;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.option-btn:hover {
+  background: #2d3748;
+  border-color: #475569;
+}
+
+.option-btn.selected {
+  background: rgba(129, 140, 248, 0.1);
+  border-color: #818cf8;
+  color: #818cf8;
+}
+
+.option-label {
+  background: rgba(255, 255, 255, 0.05);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+/* Footer Navigation */
+.quiz-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-btn,
+.submit-btn,
+.flag-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-btn {
+  background: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+}
+
+.nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.footer-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.flag-btn {
+  background: transparent;
+  color: #64748b;
+  border: 1px solid #1e293b;
+}
+
+.submit-btn {
+  background: #6366f1;
+  color: white;
+  border: none;
+}
+
+.submit-btn:hover {
+  background: #4f46e5;
+}

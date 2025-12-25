@@ -1,0 +1,241 @@
+.job-fit-page {
+  min-height: 100vh;
+  background: #020617;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.job-fit-container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 40px 60px;
+}
+
+/* ---------- HEADER ---------- */
+
+.job-header {
+  text-align: center;
+  margin: 60px 0 50px;
+}
+
+.job-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.job-header h1 span {
+  color: #818cf8;
+}
+
+.job-header p {
+  color: #94a3b8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ---------- GRID ---------- */
+
+.job-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+/* ---------- CARDS ---------- */
+
+.input-section,
+.info-section {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 24px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-header h3 {
+  font-size: 1.2rem;
+}
+
+/* ---------- FORM ---------- */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  color: #cbd5f5;
+  font-weight: 500;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 15px;
+  color: white;
+  resize: none;
+  font-family: inherit;
+  transition: 0.25s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #818cf8;
+  box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.15);
+}
+
+/* ---------- UPLOAD ---------- */
+
+.job-upload-zone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  background: #020617;
+  border: 1px dashed #1e293b;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #94a3b8;
+  transition: 0.25s ease;
+}
+
+.job-upload-zone:hover {
+  border-color: #818cf8;
+}
+
+.job-upload-zone.has-file {
+  border-style: solid;
+  border-color: #10b981;
+  color: #10b981;
+}
+
+/* ---------- BUTTON ---------- */
+
+.analyze-btn {
+  width: 100%;
+  padding: 18px;
+  background: #6366f1;
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.analyze-btn:hover:not(:disabled) {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+.analyze-btn:disabled {
+  background: #334155;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ---------- INSTRUCTIONS ---------- */
+
+.instruction-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.step-icon {
+  background: rgba(129, 140, 248, 0.1);
+  color: #818cf8;
+  padding: 10px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.step-text strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.step-text p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* ---------- TIP ---------- */
+
+.tip-box {
+  margin-top: auto;
+  padding: 16px;
+  background: rgba(129, 140, 248, 0.05);
+  border-left: 4px solid #818cf8;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+/* ---------- LOADER ---------- */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* ---------- UTILS ---------- */
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+  .job-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-fit-container {
+    padding: 0 20px 40px;
+  }
+
+  .job-header h1 {
+    font-size: 2rem;
+  }
+}

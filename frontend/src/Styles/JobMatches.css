@@ -1,0 +1,253 @@
+.matches-page {
+  min-height: 100vh;
+  background: #020617;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.matches-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 40px 60px;
+}
+
+/* Header */
+.matches-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.matches-header h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.matches-header h1 span {
+  color: #818cf8;
+}
+
+.matches-header p {
+  color: #94a3b8;
+  font-size: 1.05rem;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Grid */
+.matches-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+/* Cards */
+.upload-card,
+.instructions-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 24px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+/* Upload */
+.matches-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #1e293b;
+  border-radius: 20px;
+  padding: 60px 20px;
+  background: rgba(2, 6, 23, 0.4);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.matches-dropzone:hover {
+  border-color: #818cf8;
+  background: rgba(129, 140, 248, 0.05);
+}
+
+.matches-dropzone.has-file {
+  border-color: #10b981;
+  border-style: solid;
+}
+
+.up-icon {
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.dropzone-text p {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.dropzone-text span {
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+/* Button */
+.find-btn {
+  width: 100%;
+  padding: 18px;
+  background: #6366f1;
+  border: none;
+  border-radius: 14px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.find-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+}
+
+.find-btn:disabled {
+  background: #334155;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Instructions */
+.match-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.match-step {
+  display: flex;
+  gap: 16px;
+}
+
+.m-icon {
+  background: rgba(129, 140, 248, 0.12);
+  color: #818cf8;
+  padding: 10px;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+.m-text strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1.05rem;
+}
+
+.m-text p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Footer Note */
+.match-notice {
+  margin-top: auto;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: #94a3b8;
+  text-align: center;
+}
+
+/* Navbar */
+.analysis-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 48px;
+  border-bottom: 1px solid rgba(30, 41, 59, 0.5);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #94a3b8;
+  transition: color 0.2s ease;
+}
+
+.nav-left:hover {
+  color: #818cf8;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-tab {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #64748b;
+  position: relative;
+  padding: 8px 0;
+}
+
+.nav-tab.active {
+  color: #818cf8;
+}
+
+.nav-tab.active::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #818cf8;
+  box-shadow: 0 0 12px rgba(129, 140, 248, 0.45);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .matches-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .analysis-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .matches-container {
+    padding: 0 20px 40px;
+  }
+}
