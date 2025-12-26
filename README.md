@@ -41,15 +41,3 @@ Built with **React**, **FastAPI**, **PostgreSQL**, and **Google Gemini AI**, it 
 - Node.js  
 
 ---
-
-## ⚡ Getting Started
-
-Follow the steps below to run the project locally.
-
----
-
-## 🔧 Backend Setup
-
-```bash
-cd backend
-python -m venv myenv
