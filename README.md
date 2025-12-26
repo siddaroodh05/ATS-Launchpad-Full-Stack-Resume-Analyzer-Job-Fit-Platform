@@ -46,6 +46,10 @@ pip install -r requirements.txt
 GEMINI_API_KEY=<YOUR_GOOGLE_GEMINI_API_KEY>
 DATABASE_URL=postgresql://username:password@localhost:5432/atslaunchpad
 
+##Run the backend:
+
+uvicorn app.main:app --reload
+
 
 
 
