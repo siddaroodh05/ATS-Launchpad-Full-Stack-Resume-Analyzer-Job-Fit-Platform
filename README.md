@@ -29,12 +29,12 @@ ATS Launchpod is a full-stack application that empowers job seekers and HR profe
 
 
 ---
-
 ## ⚡ Getting Started
 
-### Backend Setup
+Backend and frontend setup instructions.
 
-```bash
+---
+
 cd backend
 python -m venv myenv         # create virtual environment
 # Activate environment:
@@ -47,8 +47,14 @@ GEMINI_API_KEY=<YOUR_GOOGLE_GEMINI_API_KEY>
 DATABASE_URL=postgresql://username:password@localhost:5432/atslaunchpad
 
 ##Run the backend:
-
 uvicorn app.main:app --reload
+---
+---
+
+### Backend Setup
+cd frontend
+npm install
+npm run dev
 
 
 
