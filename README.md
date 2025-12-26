@@ -28,4 +28,20 @@ ATS Launchpod is a full-stack application that empowers job seekers and HR profe
 ---
 
 
+---
+
+## ⚡ Getting Started
+
+### Backend Setup
+
+```bash
+cd backend
+python -m venv myenv         # create virtual environment
+# Activate environment:
+# Windows: myenv\Scripts\activate
+# Mac/Linux: source myenv/bin/activate
+pip install -r requirements.txt
+
+
+
 
