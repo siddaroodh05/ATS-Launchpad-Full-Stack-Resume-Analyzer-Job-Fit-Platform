@@ -27,5 +27,5 @@ ATS Launchpod is a full-stack application that empowers job seekers and HR profe
 
 ---
 
-## 📁 Project Structure
+
 
