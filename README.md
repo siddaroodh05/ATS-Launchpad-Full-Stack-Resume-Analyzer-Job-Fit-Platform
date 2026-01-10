@@ -42,6 +42,22 @@ These are the original capabilities of ATS Launchpad that the project shipped wi
 - 🖥️ **Interactive Frontend Interface**  
   Clean and responsive UI for uploading resumes, entering job descriptions, viewing scores, and attempting MCQ tests.
 
+---
+Here are some screenshots of the portfolio:
+
+### Home Page
+![Home Page](frontend/src/assets/Home-page.png)
+
+### About page
+![Projects Section](public/About-page.png)
+
+### Skills Page
+![Projects Section](public/Skills-page.png)
+
+### Contact Section
+![Contact Section](public/Contact-page.png)
+
+
 ## Backend Setup
 
 1. Navigate to the backend folder:
