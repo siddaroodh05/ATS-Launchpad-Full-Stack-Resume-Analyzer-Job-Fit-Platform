@@ -5,11 +5,6 @@
 ATS Launchpad is a full-stack ATS simulation platform that analyzes resumes, evaluates job-fit, identifies skill gaps, and generates AI-based MCQ skill tests to improve interview readiness.
 
 
-## Prerequisites
-
-- Python 3.11+
-- Node.js (LTS) & npm
-- Git
 
 ## Existing Features
 
