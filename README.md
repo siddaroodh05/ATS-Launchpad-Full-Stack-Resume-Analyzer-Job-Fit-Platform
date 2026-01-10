@@ -43,7 +43,7 @@ These are the original capabilities of ATS Launchpad that the project shipped wi
   Clean and responsive UI for uploading resumes, entering job descriptions, viewing scores, and attempting MCQ tests.
 
 ---
-Here are some screenshots of the portfolio:
+Here are some screenshots of the UI:
 
 ### Home Page
 ![Home Page](frontend/src/assets/Home-page.png)
