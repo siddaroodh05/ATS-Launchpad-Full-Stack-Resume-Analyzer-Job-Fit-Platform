@@ -129,6 +129,6 @@ Here are some screenshots of the UI:
    npm run dev
    ```
 
-4. Open the app in your browser (usually http://localhost:3000 or as printed by the dev server).
+
 
 
