@@ -48,14 +48,14 @@ Here are some screenshots of the portfolio:
 ### Home Page
 ![Home Page](frontend/src/assets/Home-page.png)
 
-### About page
-![Projects Section](public/About-page.png)
+### Analysis-page
+![Analysis-page](frontend/src/assets/Analysis-page.png)
 
-### Skills Page
-![Projects Section](public/Skills-page.png)
+### Job-match-home-page
+![Job-match-home-page](frontend/src/assets/Job-match-home-page.png )
 
-### Contact Section
-![Contact Section](public/Contact-page.png)
+### current-jop-oppenings
+![current-jop-oppenings](frontend/src/assets/current-jop-oppenings.png)
 
 
 ## Backend Setup
