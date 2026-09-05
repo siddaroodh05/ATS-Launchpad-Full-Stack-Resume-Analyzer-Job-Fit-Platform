@@ -96,7 +96,7 @@ export default function Home() {
                 </div>
             </nav>
 
-            {/* Hero, Features, and CTA sections remain the same using your existing CSS classes */}
+            
             <section className="hero">
                 <motion.div className="hero-text" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
                     <h2>Propel Your Career with <span>ATSLaunchpad</span></h2>

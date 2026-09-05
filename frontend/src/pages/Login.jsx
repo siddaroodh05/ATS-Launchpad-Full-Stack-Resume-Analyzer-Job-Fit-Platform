@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-
 import { Layout, Mail, Lock, ChevronRight, Rocket, User, Loader2 } from 'lucide-react';
 import '../styles/Login.css';
 import { ENDPOINTS } from '../api';
@@ -18,7 +17,7 @@ const Auth = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setError('');
-        setIsLoading(true); 
+    setIsLoading(true); 
     
         const targetUrl = isLogin ? ENDPOINTS.LOGIN : ENDPOINTS.REGISTER;
         const payload = isLogin ? { email, password } : { name, email, password };
